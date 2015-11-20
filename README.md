@@ -1,25 +1,19 @@
-# ResBaz-2016 Site
+# Dunedin ResBaz-2016 Fork
 
-Welcome! This repo contains the website for the 2016 Research Bazaar festival. If you'd like to learn more about how to bring ResBaz to your town, have a look at [this wiki](https://github.com/resbaz/cookbook/wiki) - we'd be delighted to work with you!
+This is a fork of the main ResBaz-2016 website repo:
 
-## Local Sites
+https://github.com/resbaz/resbaz-2016-02-01
 
-In addition to the main page, this website also offers local listings for each site joining us for ResBaz 2016. If you want your site added, open an issue to start the process, and we'll get you set up right away.
+It has been tweaked so that a live version can be seen on github.io, so that the impact of edits can be checked prior to update to main site.  This requires changing the _config.yml file to get jekyll working properly on githib.io. I also deleted the CNAME file (which sets the website url) because it gives a build warning (and sends me an email) every time a commit is made. As a result, we can't easily submit pull requests back to the main repository, because the changes will include alterations to files that we don't want to change. 
 
-## Contributing
+My suggestion is that we _ONLY_ edit the file relating to the Dunedin page of the website:
 
-### Setup
+https://github.com/mikblacklab/resbaz-2016-02-01/blob/gh-pages/_posts/2016-02-01-dunedin.html
 
-This website is built from the [Start Bootstrap Freelancer theme](https://github.com/IronSummitMedia/startbootstrap-freelancer), on [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). If you'd like to build it on your local machine, do the following:
+and then I will periodically transfer these edits to the main repo and submit a pull request to Bill.
 
- - [Install Jekyll](http://jekyllrb.com/docs/installation/)
- - in the base directory of this repo, do `jekyll serve`
- - if all has gone well, you'll be able to visit your website at `127.0.0.1:4000/resbaz-2016-02-01/`
+This version of the Dunedin component of the site can be viewed at:
 
-### Contribution Guide
+http://mikblacklab.github.io/resbaz-2016-02-01/dunedin/
 
-Feel free to send us a pull request, following these guidelines:
-
- - Please start by opening an issue to let us know what you'd like to change or add, so we can discuss the best way to do so.
- - Please keep each PR less than 500 lines.
-
+_Note:_ Because of how the map info is rendered on the front page (http://mikblacklab.github.io/resbaz-2016-02-01), the links are hardcoded, so clicking on the Dunedin link actually takes you to the Dunedin page of the live resbaz website (https://feb2016.resbaz.com/dunedin/), rather than the copy relating to this repo.  This can be fixed, but it involves editing more files that we don't want to submit pull requests for, so I think it's easiest to just look directly at the Dunedin page (http://mikblacklab.github.io/resbaz-2016-02-01/dunedin/) rather than trying to navigate to it from the front page. 
