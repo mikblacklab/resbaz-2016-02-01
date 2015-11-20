@@ -16,4 +16,8 @@ This version of the Dunedin component of the site can be viewed at:
 
 http://mikblacklab.github.io/resbaz-2016-02-01/dunedin/
 
+Committing a change to the webpage file will trigger the site to be rebuilt, and then changes can be checked via github.io link above.  There can be a considerable (and frustrating) lag between commit and build, so it can take a while for changes to propagate to the live version.  And occassionally the build process will time out so that the live version does not reflect the current version of the repo.  
+
+Also, in some cases formatting issues (e.g., the "schedule" table on the Dunedin page) cause problems with the build so that jekyll doesn't create the html page for serving up on github.io.  In that case you have to go bug hunting (or revert) until you've identified the issue and got the page to build again.
+
 _Note:_ Because of how the map info is rendered on the front page (http://mikblacklab.github.io/resbaz-2016-02-01), the links are hardcoded, so clicking on the Dunedin link actually takes you to the Dunedin page of the live resbaz website (https://feb2016.resbaz.com/dunedin/), rather than the copy relating to this repo.  This can be fixed, but it involves editing more files that we don't want to submit pull requests for, so I think it's easiest to just look directly at the Dunedin page (http://mikblacklab.github.io/resbaz-2016-02-01/dunedin/) rather than trying to navigate to it from the front page. 
