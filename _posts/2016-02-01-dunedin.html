@@ -94,17 +94,6 @@ speakers:
    img: img/placehold.jpg
    blurb: Mik is a statistician based in the Department of Biochemistry at the University of Otago.  Mik uses R extensively to analyse data from genomic experiments.
    
-speakers2:
- - name: Dr Paul Gardner
-   img: img/placehold.jpg
-   blurb: Paul is a Senior Lecturer in Bioinformatics at the University of Canterbury, and a former Rutherford Fellow (2010-2015).  Paul's research involves the use of bioinformatics tools to analyze RNA.
- - name: A/Prof Christine Jasoni
-   img: img/placehold.jpg
-   blurb: Christine based in the Department of Anatony at the University of Otago, and is a member of the Centre for Neuroendocrinolgy. Christine's research focuses on understanding how the maternal environment during pregnancy affects the formation of the fetal brain.
- - name: A/Prof Mik Black
-   img: img/placehold.jpg
-   blurb: Mik is a statistician based in the Department of Biochemistry at the University of Otago.  Mik uses R extensively to analyse data from genomic experiments.
-   
 sponsors:
  - name: 'Sponsor Number One'
    img: fake-sponsor.png
@@ -279,24 +268,6 @@ sponsors:
                 {% endfor %}
             </div>
 
-        </div>
-    </div>
-</section>
-
-<!-- Speakers2 -->
-<section id='speaker2Section'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <hr class="star-primary">
-                {% for speaker in page.speakers2 %}
-                    <div class='col-md-3 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
-                    </div>
-                {% endfor %}
-            </div>
         </div>
     </div>
 </section>
