@@ -17,7 +17,7 @@ accommodation: Coming to the Dunedin ResBaz event from out of town?<BR>Dunedin h
 
 classes:
  - class: Main Streams - Software Carpentry
-   tool:
+   tools:
     - name: The Unix Shell
       id: id1
       blurb: Use of the shell is fundamental to using a wide range of other powerful tools and computing resources (including “high-performance computing” supercomputers). These lessons will start you on a path towards using these resources effectively.
@@ -28,7 +28,7 @@ classes:
       id: id3
       blurb: Version control is the lab notebook of the digital world - it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on.
  - class: Additional Sessions
-   tool:
+   tools:
     - name: ggplot2 for data visualisation
       id: id4
       blurb: The popular ggplot2 package for R provides a powerful means to create compelling data visualisations.  Come along and learn how to use ggplot2 to make your data look even more beautiful. 
@@ -177,8 +177,8 @@ sponsors:
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
                         <div class = 'list-group-item text-left'>
-                            <a class='menuItem' id = {{ tool.id }} >{{ tool.name }}</a><br>
-                            <p class = 'hidden' id = {{ tool.id}}Blurb > {{ tool.blurb }} </p>
+                            <a class='menuItem' id = {{ tools.id }} >{{ tools.name }}</a><br>
+                            <p class = 'hidden' id = {{ tools.id}}Blurb > {{ tools.blurb }} </p>
                         </div>
                         {% endfor %}
                     </div>
